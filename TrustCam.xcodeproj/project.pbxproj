@@ -1,0 +1,932 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01463E3536D9C8996EAAF312 /* Pods_TrustCam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE98572F8241F79F27A579E0 /* Pods_TrustCam.framework */; };
+		06AAC8B68755C2362E8F5AB3 /* Pods_TrustCam_TrustCamUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2875FE7732E28BE12CD15238 /* Pods_TrustCam_TrustCamUITests.framework */; };
+		3B773100A7ECECDAC15A98E3 /* Pods_TrustCamTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD0A7E96114407AFCBD43B27 /* Pods_TrustCamTests.framework */; };
+		FB20E9C8237112B1000E0586 /* SwipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC74EC6236ABE3A00E71193 /* SwipeTableViewController.swift */; };
+		FB2E88D923827C2000C144F7 /* TAChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2E88D823827C2000C144F7 /* TAChannelCell.swift */; };
+		FB2E88DA2382901600C144F7 /* TADeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB20E9C5236FEB99000E0586 /* TADeviceCell.swift */; };
+		FB493E77238BA7EE00E90F5B /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBECE62A236696570026288E /* LiveViewController.swift */; };
+		FB493E78238BA7F400E90F5B /* MediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBECE62C236696810026288E /* MediaViewController.swift */; };
+		FB493E79238BA7F900E90F5B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC9B78D2362BE1200EAF158 /* HomeViewController.swift */; };
+		FB5B76FA23667DF100EBF7AA /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5B76F923667DF100EBF7AA /* Device.swift */; };
+		FB5B76FF23667F1F00EBF7AA /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5B76FE23667F1F00EBF7AA /* Person.swift */; };
+		FB5B770923668B7300EBF7AA /* DeviceManager.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5B770823668B7300EBF7AA /* DeviceManager.storyboard */; };
+		FB6CE55A237256F5002B96FC /* TAVideoWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6CE559237256F5002B96FC /* TAVideoWindow.swift */; };
+		FBA97CB52366B41000293380 /* TAHomeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA97CB42366B41000293380 /* TAHomeButton.swift */; };
+		FBA97CB923680E0E00293380 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA97CB823680E0E00293380 /* Common.swift */; };
+		FBA97CBB2369393600293380 /* TATextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA97CBA2369393500293380 /* TATextField.swift */; };
+		FBA97CBE2369771100293380 /* AddDeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA97CBD2369770F00293380 /* AddDeviceViewController.swift */; };
+		FBB5ECD5237A9F65006A7906 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB5ECD4237A9F65006A7906 /* Channel.swift */; };
+		FBC74EC9236BD6C000E71193 /* DeviceConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC74EC8236BD6C000E71193 /* DeviceConfigViewController.swift */; };
+		FBC9B78A2362BE1200EAF158 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC9B7892362BE1200EAF158 /* AppDelegate.swift */; };
+		FBC9B78C2362BE1200EAF158 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC9B78B2362BE1200EAF158 /* SceneDelegate.swift */; };
+		FBC9B7912362BE1200EAF158 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBC9B78F2362BE1200EAF158 /* Main.storyboard */; };
+		FBC9B7932362BE2200EAF158 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBC9B7922362BE2200EAF158 /* Assets.xcassets */; };
+		FBC9B7962362BE2200EAF158 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBC9B7942362BE2200EAF158 /* LaunchScreen.storyboard */; };
+		FBC9B7A12362BE2300EAF158 /* TrustCamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC9B7A02362BE2300EAF158 /* TrustCamTests.swift */; };
+		FBC9B7AC2362BE2300EAF158 /* TrustCamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC9B7AB2362BE2300EAF158 /* TrustCamUITests.swift */; };
+		FBECE6232366937B0026288E /* LiveView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBECE6222366937B0026288E /* LiveView.storyboard */; };
+		FBECE625236694760026288E /* MediaLibrary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBECE624236694760026288E /* MediaLibrary.storyboard */; };
+		FBECE629236696180026288E /* DeviceManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBECE628236696180026288E /* DeviceManagerViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBC9B79D2362BE2300EAF158 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBC9B77E2362BE1200EAF158 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBC9B7852362BE1200EAF158;
+			remoteInfo = TrustCam;
+		};
+		FBC9B7A82362BE2300EAF158 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBC9B77E2362BE1200EAF158 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBC9B7852362BE1200EAF158;
+			remoteInfo = TrustCam;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2875FE7732E28BE12CD15238 /* Pods_TrustCam_TrustCamUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrustCam_TrustCamUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E51816CEB2477A9250789A3 /* Pods-TrustCam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrustCam.release.xcconfig"; path = "Target Support Files/Pods-TrustCam/Pods-TrustCam.release.xcconfig"; sourceTree = "<group>"; };
+		4764BDA1BF7BA4030A085370 /* Pods-TrustCamTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrustCamTests.debug.xcconfig"; path = "Target Support Files/Pods-TrustCamTests/Pods-TrustCamTests.debug.xcconfig"; sourceTree = "<group>"; };
+		528233A855BB2BC494DF4684 /* Pods-TrustCamTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrustCamTests.release.xcconfig"; path = "Target Support Files/Pods-TrustCamTests/Pods-TrustCamTests.release.xcconfig"; sourceTree = "<group>"; };
+		55EAC939489690E8475E1FFC /* Pods-TrustCam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrustCam.debug.xcconfig"; path = "Target Support Files/Pods-TrustCam/Pods-TrustCam.debug.xcconfig"; sourceTree = "<group>"; };
+		B82A483E94129A3C7C97FCB7 /* Pods-TrustCam-TrustCamUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrustCam-TrustCamUITests.release.xcconfig"; path = "Target Support Files/Pods-TrustCam-TrustCamUITests/Pods-TrustCam-TrustCamUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BE98572F8241F79F27A579E0 /* Pods_TrustCam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrustCam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD0A7E96114407AFCBD43B27 /* Pods_TrustCamTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrustCamTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE155B15781C43BCCF24BB04 /* Pods-TrustCam-TrustCamUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrustCam-TrustCamUITests.debug.xcconfig"; path = "Target Support Files/Pods-TrustCam-TrustCamUITests/Pods-TrustCam-TrustCamUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FB20E9C5236FEB99000E0586 /* TADeviceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TADeviceCell.swift; sourceTree = "<group>"; };
+		FB2E88D823827C2000C144F7 /* TAChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAChannelCell.swift; sourceTree = "<group>"; };
+		FB5B76F923667DF100EBF7AA /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		FB5B76FE23667F1F00EBF7AA /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		FB5B770823668B7300EBF7AA /* DeviceManager.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DeviceManager.storyboard; sourceTree = "<group>"; };
+		FB6CE559237256F5002B96FC /* TAVideoWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAVideoWindow.swift; sourceTree = "<group>"; };
+		FBA97CB42366B41000293380 /* TAHomeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAHomeButton.swift; sourceTree = "<group>"; };
+		FBA97CB823680E0E00293380 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		FBA97CBA2369393500293380 /* TATextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TATextField.swift; sourceTree = "<group>"; };
+		FBA97CBD2369770F00293380 /* AddDeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDeviceViewController.swift; sourceTree = "<group>"; };
+		FBB5ECD4237A9F65006A7906 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		FBC74EC6236ABE3A00E71193 /* SwipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTableViewController.swift; sourceTree = "<group>"; };
+		FBC74EC8236BD6C000E71193 /* DeviceConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceConfigViewController.swift; sourceTree = "<group>"; };
+		FBC9B7862362BE1200EAF158 /* TrustCam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrustCam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBC9B7892362BE1200EAF158 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FBC9B78B2362BE1200EAF158 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FBC9B78D2362BE1200EAF158 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FBC9B7902362BE1200EAF158 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FBC9B7922362BE2200EAF158 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBC9B7952362BE2200EAF158 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FBC9B7972362BE2200EAF158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBC9B79C2362BE2300EAF158 /* TrustCamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrustCamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBC9B7A02362BE2300EAF158 /* TrustCamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrustCamTests.swift; sourceTree = "<group>"; };
+		FBC9B7A22362BE2300EAF158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBC9B7A72362BE2300EAF158 /* TrustCamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrustCamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBC9B7AB2362BE2300EAF158 /* TrustCamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrustCamUITests.swift; sourceTree = "<group>"; };
+		FBC9B7AD2362BE2300EAF158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBECE6222366937B0026288E /* LiveView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LiveView.storyboard; sourceTree = "<group>"; };
+		FBECE624236694760026288E /* MediaLibrary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MediaLibrary.storyboard; sourceTree = "<group>"; };
+		FBECE628236696180026288E /* DeviceManagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceManagerViewController.swift; sourceTree = "<group>"; };
+		FBECE62A236696570026288E /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
+		FBECE62C236696810026288E /* MediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBC9B7832362BE1200EAF158 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01463E3536D9C8996EAAF312 /* Pods_TrustCam.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBC9B7992362BE2300EAF158 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B773100A7ECECDAC15A98E3 /* Pods_TrustCamTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBC9B7A42362BE2300EAF158 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06AAC8B68755C2362E8F5AB3 /* Pods_TrustCam_TrustCamUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB439BEE055398C6A98EF6CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55EAC939489690E8475E1FFC /* Pods-TrustCam.debug.xcconfig */,
+				2E51816CEB2477A9250789A3 /* Pods-TrustCam.release.xcconfig */,
+				EE155B15781C43BCCF24BB04 /* Pods-TrustCam-TrustCamUITests.debug.xcconfig */,
+				B82A483E94129A3C7C97FCB7 /* Pods-TrustCam-TrustCamUITests.release.xcconfig */,
+				4764BDA1BF7BA4030A085370 /* Pods-TrustCamTests.debug.xcconfig */,
+				528233A855BB2BC494DF4684 /* Pods-TrustCamTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FB493E75238BA23400E90F5B /* Live View */ = {
+			isa = PBXGroup;
+			children = (
+				FBECE62A236696570026288E /* LiveViewController.swift */,
+			);
+			path = "Live View";
+			sourceTree = "<group>";
+		};
+		FB493E76238BA24200E90F5B /* Media Library */ = {
+			isa = PBXGroup;
+			children = (
+				FBECE62C236696810026288E /* MediaViewController.swift */,
+			);
+			path = "Media Library";
+			sourceTree = "<group>";
+		};
+		FB5B76F523667C8300EBF7AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB5B76F923667DF100EBF7AA /* Device.swift */,
+				FB5B76FE23667F1F00EBF7AA /* Person.swift */,
+				FBB5ECD4237A9F65006A7906 /* Channel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FB5B76F623667D1500EBF7AA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FBC9B78D2362BE1200EAF158 /* HomeViewController.swift */,
+				FBC74ECA236BD6D900E71193 /* Device Manager */,
+				FB493E75238BA23400E90F5B /* Live View */,
+				FB493E76238BA24200E90F5B /* Media Library */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FB5B76F723667D1D00EBF7AA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FBC9B78F2362BE1200EAF158 /* Main.storyboard */,
+				FB5B770823668B7300EBF7AA /* DeviceManager.storyboard */,
+				FBECE6222366937B0026288E /* LiveView.storyboard */,
+				FBECE624236694760026288E /* MediaLibrary.storyboard */,
+				FBC9B7942362BE2200EAF158 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FB5B76F823667D7B00EBF7AA /* Supported Files */ = {
+			isa = PBXGroup;
+			children = (
+				FBC9B7922362BE2200EAF158 /* Assets.xcassets */,
+			);
+			path = "Supported Files";
+			sourceTree = "<group>";
+		};
+		FB64F814236A8DE60061D2E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE98572F8241F79F27A579E0 /* Pods_TrustCam.framework */,
+				2875FE7732E28BE12CD15238 /* Pods_TrustCam_TrustCamUITests.framework */,
+				DD0A7E96114407AFCBD43B27 /* Pods_TrustCamTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FBA97CB32366B3E600293380 /* Custom Elements */ = {
+			isa = PBXGroup;
+			children = (
+				FBA97CBA2369393500293380 /* TATextField.swift */,
+				FBA97CB42366B41000293380 /* TAHomeButton.swift */,
+				FB20E9C5236FEB99000E0586 /* TADeviceCell.swift */,
+				FB2E88D823827C2000C144F7 /* TAChannelCell.swift */,
+				FBA97CB823680E0E00293380 /* Common.swift */,
+				FB6CE559237256F5002B96FC /* TAVideoWindow.swift */,
+			);
+			path = "Custom Elements";
+			sourceTree = "<group>";
+		};
+		FBC74ECA236BD6D900E71193 /* Device Manager */ = {
+			isa = PBXGroup;
+			children = (
+				FBECE628236696180026288E /* DeviceManagerViewController.swift */,
+				FBC74EC6236ABE3A00E71193 /* SwipeTableViewController.swift */,
+				FBA97CBD2369770F00293380 /* AddDeviceViewController.swift */,
+				FBC74EC8236BD6C000E71193 /* DeviceConfigViewController.swift */,
+			);
+			path = "Device Manager";
+			sourceTree = "<group>";
+		};
+		FBC9B77D2362BE1200EAF158 = {
+			isa = PBXGroup;
+			children = (
+				FBC9B7882362BE1200EAF158 /* TrustCam */,
+				FBC9B79F2362BE2300EAF158 /* TrustCamTests */,
+				FBC9B7AA2362BE2300EAF158 /* TrustCamUITests */,
+				FBC9B7872362BE1200EAF158 /* Products */,
+				FB64F814236A8DE60061D2E8 /* Frameworks */,
+				BB439BEE055398C6A98EF6CA /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		FBC9B7872362BE1200EAF158 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBC9B7862362BE1200EAF158 /* TrustCam.app */,
+				FBC9B79C2362BE2300EAF158 /* TrustCamTests.xctest */,
+				FBC9B7A72362BE2300EAF158 /* TrustCamUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBC9B7882362BE1200EAF158 /* TrustCam */ = {
+			isa = PBXGroup;
+			children = (
+				FB5B76F523667C8300EBF7AA /* Model */,
+				FB5B76F723667D1D00EBF7AA /* View */,
+				FB5B76F623667D1500EBF7AA /* Controller */,
+				FBC9B7892362BE1200EAF158 /* AppDelegate.swift */,
+				FBC9B78B2362BE1200EAF158 /* SceneDelegate.swift */,
+				FBC9B7972362BE2200EAF158 /* Info.plist */,
+				FBA97CB32366B3E600293380 /* Custom Elements */,
+				FB5B76F823667D7B00EBF7AA /* Supported Files */,
+			);
+			path = TrustCam;
+			sourceTree = "<group>";
+		};
+		FBC9B79F2362BE2300EAF158 /* TrustCamTests */ = {
+			isa = PBXGroup;
+			children = (
+				FBC9B7A02362BE2300EAF158 /* TrustCamTests.swift */,
+				FBC9B7A22362BE2300EAF158 /* Info.plist */,
+			);
+			path = TrustCamTests;
+			sourceTree = "<group>";
+		};
+		FBC9B7AA2362BE2300EAF158 /* TrustCamUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FBC9B7AB2362BE2300EAF158 /* TrustCamUITests.swift */,
+				FBC9B7AD2362BE2300EAF158 /* Info.plist */,
+			);
+			path = TrustCamUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBC9B7852362BE1200EAF158 /* TrustCam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBC9B7B02362BE2300EAF158 /* Build configuration list for PBXNativeTarget "TrustCam" */;
+			buildPhases = (
+				F580ED9949A787999CFDB2F3 /* [CP] Check Pods Manifest.lock */,
+				FBC9B7822362BE1200EAF158 /* Sources */,
+				FBC9B7832362BE1200EAF158 /* Frameworks */,
+				FBC9B7842362BE1200EAF158 /* Resources */,
+				1ED2817E2EED616373B85145 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrustCam;
+			productName = TrustCam;
+			productReference = FBC9B7862362BE1200EAF158 /* TrustCam.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBC9B79B2362BE2300EAF158 /* TrustCamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBC9B7B32362BE2300EAF158 /* Build configuration list for PBXNativeTarget "TrustCamTests" */;
+			buildPhases = (
+				34218B9568C56B344A156F8C /* [CP] Check Pods Manifest.lock */,
+				FBC9B7982362BE2300EAF158 /* Sources */,
+				FBC9B7992362BE2300EAF158 /* Frameworks */,
+				FBC9B79A2362BE2300EAF158 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBC9B79E2362BE2300EAF158 /* PBXTargetDependency */,
+			);
+			name = TrustCamTests;
+			productName = TrustCamTests;
+			productReference = FBC9B79C2362BE2300EAF158 /* TrustCamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FBC9B7A62362BE2300EAF158 /* TrustCamUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBC9B7B62362BE2300EAF158 /* Build configuration list for PBXNativeTarget "TrustCamUITests" */;
+			buildPhases = (
+				0D1E501FEF9866CCF1B09074 /* [CP] Check Pods Manifest.lock */,
+				FBC9B7A32362BE2300EAF158 /* Sources */,
+				FBC9B7A42362BE2300EAF158 /* Frameworks */,
+				FBC9B7A52362BE2300EAF158 /* Resources */,
+				0D1976F1620299EB7E731E93 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBC9B7A92362BE2300EAF158 /* PBXTargetDependency */,
+			);
+			name = TrustCamUITests;
+			productName = TrustCamUITests;
+			productReference = FBC9B7A72362BE2300EAF158 /* TrustCamUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBC9B77E2362BE1200EAF158 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Trust Active Co., Ltd.";
+				TargetAttributes = {
+					FBC9B7852362BE1200EAF158 = {
+						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
+					};
+					FBC9B79B2362BE2300EAF158 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = FBC9B7852362BE1200EAF158;
+					};
+					FBC9B7A62362BE2300EAF158 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = FBC9B7852362BE1200EAF158;
+					};
+				};
+			};
+			buildConfigurationList = FBC9B7812362BE1200EAF158 /* Build configuration list for PBXProject "TrustCam" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBC9B77D2362BE1200EAF158;
+			productRefGroup = FBC9B7872362BE1200EAF158 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBC9B7852362BE1200EAF158 /* TrustCam */,
+				FBC9B79B2362BE2300EAF158 /* TrustCamTests */,
+				FBC9B7A62362BE2300EAF158 /* TrustCamUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBC9B7842362BE1200EAF158 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBC9B7962362BE2200EAF158 /* LaunchScreen.storyboard in Resources */,
+				FBC9B7932362BE2200EAF158 /* Assets.xcassets in Resources */,
+				FB5B770923668B7300EBF7AA /* DeviceManager.storyboard in Resources */,
+				FBC9B7912362BE1200EAF158 /* Main.storyboard in Resources */,
+				FBECE6232366937B0026288E /* LiveView.storyboard in Resources */,
+				FBECE625236694760026288E /* MediaLibrary.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBC9B79A2362BE2300EAF158 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBC9B7A52362BE2300EAF158 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D1976F1620299EB7E731E93 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrustCam-TrustCamUITests/Pods-TrustCam-TrustCamUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrustCam-TrustCamUITests/Pods-TrustCam-TrustCamUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TrustCam-TrustCamUITests/Pods-TrustCam-TrustCamUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0D1E501FEF9866CCF1B09074 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrustCam-TrustCamUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1ED2817E2EED616373B85145 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrustCam/Pods-TrustCam-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrustCam/Pods-TrustCam-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TrustCam/Pods-TrustCam-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		34218B9568C56B344A156F8C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrustCamTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F580ED9949A787999CFDB2F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrustCam-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBC9B7822362BE1200EAF158 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBC74EC9236BD6C000E71193 /* DeviceConfigViewController.swift in Sources */,
+				FBB5ECD5237A9F65006A7906 /* Channel.swift in Sources */,
+				FB2E88DA2382901600C144F7 /* TADeviceCell.swift in Sources */,
+				FB5B76FF23667F1F00EBF7AA /* Person.swift in Sources */,
+				FB6CE55A237256F5002B96FC /* TAVideoWindow.swift in Sources */,
+				FBECE629236696180026288E /* DeviceManagerViewController.swift in Sources */,
+				FBA97CBB2369393600293380 /* TATextField.swift in Sources */,
+				FB493E79238BA7F900E90F5B /* HomeViewController.swift in Sources */,
+				FBA97CBE2369771100293380 /* AddDeviceViewController.swift in Sources */,
+				FB493E78238BA7F400E90F5B /* MediaViewController.swift in Sources */,
+				FB20E9C8237112B1000E0586 /* SwipeTableViewController.swift in Sources */,
+				FB493E77238BA7EE00E90F5B /* LiveViewController.swift in Sources */,
+				FBA97CB923680E0E00293380 /* Common.swift in Sources */,
+				FBC9B78A2362BE1200EAF158 /* AppDelegate.swift in Sources */,
+				FBC9B78C2362BE1200EAF158 /* SceneDelegate.swift in Sources */,
+				FB2E88D923827C2000C144F7 /* TAChannelCell.swift in Sources */,
+				FB5B76FA23667DF100EBF7AA /* Device.swift in Sources */,
+				FBA97CB52366B41000293380 /* TAHomeButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBC9B7982362BE2300EAF158 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBC9B7A12362BE2300EAF158 /* TrustCamTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBC9B7A32362BE2300EAF158 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBC9B7AC2362BE2300EAF158 /* TrustCamUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBC9B79E2362BE2300EAF158 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBC9B7852362BE1200EAF158 /* TrustCam */;
+			targetProxy = FBC9B79D2362BE2300EAF158 /* PBXContainerItemProxy */;
+		};
+		FBC9B7A92362BE2300EAF158 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBC9B7852362BE1200EAF158 /* TrustCam */;
+			targetProxy = FBC9B7A82362BE2300EAF158 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FBC9B78F2362BE1200EAF158 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBC9B7902362BE1200EAF158 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FBC9B7942362BE2200EAF158 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBC9B7952362BE2200EAF158 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FBC9B7AE2362BE2300EAF158 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FBC9B7AF2362BE2300EAF158 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBC9B7B12362BE2300EAF158 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55EAC939489690E8475E1FFC /* Pods-TrustCam.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = 8N8M9HWA9N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TrustCam/ZLSDK",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/TrustCam/ZLSDK\"",
+					"\"$(SRCROOT)/TrustCam/ZLSDK/zlnetsdk.framework/Headers\"",
+				);
+				INFOPLIST_FILE = TrustCam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Realm/core\"",
+					"$(PROJECT_DIR)/TrustCam/ZLSDK",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.canerates.TrustCam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/TrustCam/ZLSDK/zlnetsdk.framework/Headers\"",
+					"\"$(SRCROOT)/TrustCam/ZLSDK\"",
+				);
+			};
+			name = Debug;
+		};
+		FBC9B7B22362BE2300EAF158 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E51816CEB2477A9250789A3 /* Pods-TrustCam.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = 8N8M9HWA9N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TrustCam/ZLSDK",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/TrustCam/ZLSDK\"",
+					"\"$(SRCROOT)/TrustCam/ZLSDK/zlnetsdk.framework/Headers\"",
+				);
+				INFOPLIST_FILE = TrustCam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Realm/core\"",
+					"$(PROJECT_DIR)/TrustCam/ZLSDK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.canerates.TrustCam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/TrustCam/ZLSDK/zlnetsdk.framework/Headers\"",
+					"\"$(SRCROOT)/TrustCam/ZLSDK\"",
+				);
+			};
+			name = Release;
+		};
+		FBC9B7B42362BE2300EAF158 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4764BDA1BF7BA4030A085370 /* Pods-TrustCamTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X46356HF4Z;
+				INFOPLIST_FILE = TrustCamTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.trustactive.TrustCamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrustCam.app/TrustCam";
+			};
+			name = Debug;
+		};
+		FBC9B7B52362BE2300EAF158 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 528233A855BB2BC494DF4684 /* Pods-TrustCamTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X46356HF4Z;
+				INFOPLIST_FILE = TrustCamTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.trustactive.TrustCamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrustCam.app/TrustCam";
+			};
+			name = Release;
+		};
+		FBC9B7B72362BE2300EAF158 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE155B15781C43BCCF24BB04 /* Pods-TrustCam-TrustCamUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X46356HF4Z;
+				INFOPLIST_FILE = TrustCamUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.trustactive.TrustCamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrustCam;
+			};
+			name = Debug;
+		};
+		FBC9B7B82362BE2300EAF158 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B82A483E94129A3C7C97FCB7 /* Pods-TrustCam-TrustCamUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X46356HF4Z;
+				INFOPLIST_FILE = TrustCamUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.trustactive.TrustCamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrustCam;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBC9B7812362BE1200EAF158 /* Build configuration list for PBXProject "TrustCam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBC9B7AE2362BE2300EAF158 /* Debug */,
+				FBC9B7AF2362BE2300EAF158 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBC9B7B02362BE2300EAF158 /* Build configuration list for PBXNativeTarget "TrustCam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBC9B7B12362BE2300EAF158 /* Debug */,
+				FBC9B7B22362BE2300EAF158 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBC9B7B32362BE2300EAF158 /* Build configuration list for PBXNativeTarget "TrustCamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBC9B7B42362BE2300EAF158 /* Debug */,
+				FBC9B7B52362BE2300EAF158 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBC9B7B62362BE2300EAF158 /* Build configuration list for PBXNativeTarget "TrustCamUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBC9B7B72362BE2300EAF158 /* Debug */,
+				FBC9B7B82362BE2300EAF158 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBC9B77E2362BE1200EAF158 /* Project object */;
+}

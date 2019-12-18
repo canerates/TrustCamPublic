@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-TrustCam-TrustCamUITests/Pods-TrustCam-TrustCamUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Realm/Realm.framework
+${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework
+${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework
+${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework

@@ -1,0 +1,6 @@
+framework module Pods_TrustCamTests {
+  umbrella header "Pods-TrustCamTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
